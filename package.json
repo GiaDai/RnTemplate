@@ -1,0 +1,32 @@
+{
+    "name": "react-native-template",
+    "version": "1.6.1",
+    "description": "A React Native template based on Obytes Mobile tribe best practices ",
+    "scripts": {
+      "np": "np --no-publish"
+    },
+    "files": [
+      "template",
+      "template.config.js"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GiaDai/RnTemplate.git"
+    },
+    "keywords": [
+      "react-native",
+      "typescript",
+      "jest",
+      "template",
+      "boilerplate"
+    ],
+    "author": "GiaBao",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/GiaDai/RnTemplate.git/issues"
+    },
+    "homepage": "https://github.com/GiaDai/RnTemplate.git#readme",
+    "devDependencies": {
+      "np": "^8.12.1"
+    }
+  }
