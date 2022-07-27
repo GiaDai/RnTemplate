@@ -60,4 +60,5 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 /vendor/bundle/
+/ios/RNTemplate.xcodeproj/project.pbxproj
 /ios/Podfile.lock
