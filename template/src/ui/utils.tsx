@@ -23,6 +23,24 @@ export const showErrorMessage = (message: string = 'Something went wrong ') => {
   });
 };
 
+export const showInfoMessage = (message: string = 'Something is notice! ') => {
+  showMessage({
+    message,
+    type: 'info',
+    duration: 4000,
+    icon: 'info',
+  });
+};
+
+export const showSuccessMessage = (message: string = 'Success! ') => {
+  showMessage({
+    message,
+    type: 'success',
+    duration: 4000,
+    icon: 'success',
+  });
+};
+
 export const extractError = (data: unknown): string => {
   if (typeof data === 'string') {
     return data;
