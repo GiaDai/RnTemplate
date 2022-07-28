@@ -4,6 +4,8 @@ import {useAuth} from 'core';
 import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import {KeyboardAvoidingView} from 'react-native';
+import {View} from 'react-native-ui-lib';
 
 type FormData = {
   email: string;
@@ -27,20 +29,24 @@ export const Login = () => {
     signIn({access: 'access-token', refresh: 'refresh-token'});
   };
   return (
-    <Screen>
-      <Input control={control} name="email" label="Email" />
-      <Input
-        control={control}
-        name="password"
-        label="Password"
-        placeholder="***"
-        secureTextEntry={true}
-      />
-      <Button
-        label="Login"
-        onPress={handleSubmit(onSubmit)}
-        variant="secondary"
-      />
-    </Screen>
+    <KeyboardAvoidingView style={{flex: 1}} behavior="height">
+      <View flex centerV paddingH-20>
+        <Screen>
+          <Input control={control} name="email" label="Email" />
+          <Input
+            control={control}
+            name="password"
+            label="Password"
+            placeholder="***"
+            secureTextEntry={true}
+          />
+          <Button
+            label="Login"
+            onPress={handleSubmit(onSubmit)}
+            variant="secondary"
+          />
+        </Screen>
+      </View>
+    </KeyboardAvoidingView>
   );
 };
